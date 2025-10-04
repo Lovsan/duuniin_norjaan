@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work in Norway - Duuniin Norjaan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="translations.js"></script>
+    <script src="analytics.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>🇳🇴 Duuniin Norjaan</h1>
+                <p class="tagline">Your Gateway to Working in Norway</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Norway</a></li>
+                <li><a href="#why-norway">Why Norway</a></li>
+                <li><a href="#opportunities">Job Opportunities</a></li>
+                <li><a href="#how-to-apply">How to Apply</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="admin.html" class="admin-link">🔐 Admin</a></li>
+                <li class="language-selector">
+                    <select id="languageSelect" onchange="setLanguage(this.value)">
+                        <option value="en">🇬🇧 English</option>
+                        <option value="no">🇳🇴 Norsk</option>
+                        <option value="sv">🇸🇪 Svenska</option>
+                        <option value="da">🇩🇰 Dansk</option>
+                        <option value="fi">🇫🇮 Suomi</option>
+                        <option value="et">🇪🇪 Eesti</option>
+                        <option value="lv">🇱🇻 Latviešu</option>
+                        <option value="lt">🇱🇹 Lietuvių</option>
+                        <option value="pl">🇵🇱 Polski</option>
+                        <option value="it">🇮🇹 Italiano</option>
+                        <option value="ru">🇷🇺 Русский</option>
+                        <option value="uk">🇺🇦 Українська</option>
+                        <option value="es">🇪🇸 Español</option>
+                        <option value="fr">🇫🇷 Français</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Start Your Career Journey in Norway</h2>
+                <p>Discover amazing job opportunities, high quality of life, and breathtaking nature in Norway</p>
+                <a href="#opportunities" class="cta-button">Explore Opportunities</a>
+            </div>
+        </section>
+
+        <!-- About Norway Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Norway</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>🌍 Location & Nature</h3>
+                        <p>Norway is located in Northern Europe, known for its stunning fjords, mountains, and the Northern Lights. The country offers unparalleled natural beauty and outdoor activities year-round.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>👥 Population & Culture</h3>
+                        <p>With a population of about 5.5 million, Norway is known for its high standard of living, egalitarian society, and work-life balance. Norwegians value nature, sustainability, and community.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🗣️ Language</h3>
+                        <p>Norwegian is the official language, but most Norwegians speak excellent English. Many employers offer Norwegian language courses to help you integrate.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>💰 Economy</h3>
+                        <p>Norway has one of the world's highest GDPs per capita, with a strong economy based on oil, gas, fishing, and technology sectors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Norway Section -->
+        <section id="why-norway" class="section alternate-bg">
+            <div class="container">
+                <h2>Why Work in Norway?</h2>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💼</div>
+                        <h3>High Salaries</h3>
+                        <p>Norway offers some of the highest salaries in Europe, with competitive wages across all sectors. Average annual salaries range from 450,000-800,000 NOK depending on the field.</p>
+                        <p class="benefit-extra">Even entry-level positions offer excellent compensation. Overtime work is well-compensated and regulated by law.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">⚖️</div>
+                        <h3>Work-Life Balance</h3>
+                        <p>37.5-hour work weeks, 5 weeks paid vacation (25 days), and strong worker protections ensure a healthy work-life balance.</p>
+                        <p class="benefit-extra">Flexible working arrangements are common. Many companies offer remote work options and value personal time.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🏥</div>
+                        <h3>Healthcare & Education</h3>
+                        <p>Universal healthcare with minimal costs and free education, including higher education, for residents.</p>
+                        <p class="benefit-extra">World-class hospitals and educational institutions. Children receive free education from kindergarten through university.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">👨‍👩‍👧‍👦</div>
+                        <h3>Family Benefits</h3>
+                        <p>Generous parental leave (49 weeks at full pay or 59 weeks at 80% pay) and subsidized childcare support.</p>
+                        <p class="benefit-extra">Norway is one of the best countries for families. Paternity leave is encouraged, and both parents have equal rights.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🌱</div>
+                        <h3>Quality of Life</h3>
+                        <p>Clean environment, low crime rates, and consistently ranked among the happiest countries in the world.</p>
+                        <p class="benefit-extra">Stunning natural beauty, outdoor recreation opportunities year-round, and modern infrastructure in all cities.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🔒</div>
+                        <h3>Social Security</h3>
+                        <p>Comprehensive social security system including unemployment benefits, disability insurance, and pensions.</p>
+                        <p class="benefit-extra">Strong safety net ensures financial security. Pension system guarantees comfortable retirement.</p>
+                    </div>
+                </div>
+                
+                <div class="norway-facts">
+                    <h3>Additional Benefits</h3>
+                    <div class="facts-grid">
+                        <div class="fact-item">
+                            <span class="fact-icon">🎯</span>
+                            <strong>Job Security:</strong> Strong employment laws protect workers from unfair dismissal
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-icon">💪</span>
+                            <strong>Union Support:</strong> High union membership ensures worker rights are protected
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-icon">🌍</span>
+                            <strong>Diverse Workplace:</strong> International work environment, English widely spoken
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-icon">🏔️</span>
+                            <strong>Nature Access:</strong> "Allemannsretten" - freedom to roam in nature
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-icon">🚴</span>
+                            <strong>Active Lifestyle:</strong> Excellent infrastructure for outdoor activities
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-icon">📚</span>
+                            <strong>Free Language Courses:</strong> Government-funded Norwegian language training
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Job Opportunities Section -->
+        <section id="opportunities" class="section">
+            <div class="container">
+                <h2>Job Opportunities</h2>
+                <p class="section-intro">Norway has high demand for skilled workers in various sectors. Here are the most in-demand positions with detailed salary information:</p>
+                
+                <div class="job-sectors">
+                    <div class="sector-card">
+                        <h3>🏗️ Construction & Engineering</h3>
+                        <p class="sector-description">Norway's booming construction industry offers excellent opportunities for skilled tradespeople and engineers.</p>
+                        <ul>
+                            <li><strong>Civil Engineers</strong> - 550,000-750,000 NOK/year
+                                <span class="job-detail">Plan and supervise construction projects</span>
+                            </li>
+                            <li><strong>Electricians</strong> - 500,000-650,000 NOK/year
+                                <span class="job-detail">Install and maintain electrical systems</span>
+                            </li>
+                            <li><strong>Carpenters</strong> - 480,000-620,000 NOK/year
+                                <span class="job-detail">Skilled woodwork and construction</span>
+                            </li>
+                            <li><strong>Plumbers</strong> - 490,000-640,000 NOK/year
+                                <span class="job-detail">Install and repair water systems</span>
+                            </li>
+                            <li><strong>Welders</strong> - 470,000-600,000 NOK/year
+                                <span class="job-detail">Offshore and construction welding</span>
+                            </li>
+                        </ul>
+                        <div class="sector-requirements">
+                            <strong>Requirements:</strong> Relevant certifications, 2-5 years experience, basic Norwegian or English
+                        </div>
+                    </div>
+                    <div class="sector-card">
+                        <h3>💻 IT & Technology</h3>
+                        <p class="sector-description">Norway's tech sector is rapidly growing, with startups and established companies seeking talented developers.</p>
+                        <ul>
+                            <li><strong>Software Developers</strong> - 650,000-950,000 NOK/year
+                                <span class="job-detail">Full-stack, backend, frontend development</span>
+                            </li>
+                            <li><strong>Data Scientists</strong> - 700,000-1,000,000 NOK/year
+                                <span class="job-detail">AI, machine learning, data analysis</span>
+                            </li>
+                            <li><strong>IT Security Specialists</strong> - 680,000-920,000 NOK/year
+                                <span class="job-detail">Cybersecurity, threat analysis</span>
+                            </li>
+                            <li><strong>System Administrators</strong> - 600,000-800,000 NOK/year
+                                <span class="job-detail">Network management, server administration</span>
+                            </li>
+                            <li><strong>DevOps Engineers</strong> - 650,000-900,000 NOK/year
+                                <span class="job-detail">CI/CD, cloud infrastructure, automation</span>
+                            </li>
+                        </ul>
+                        <div class="sector-requirements">
+                            <strong>Requirements:</strong> Bachelor's degree, relevant experience, portfolio of projects, English fluency
+                        </div>
+                    </div>
+                    <div class="sector-card">
+                        <h3>🏥 Healthcare</h3>
+                        <p class="sector-description">Norway's healthcare system needs qualified professionals across all specializations.</p>
+                        <ul>
+                            <li><strong>Nurses</strong> - 480,000-620,000 NOK/year
+                                <span class="job-detail">Patient care in hospitals and clinics</span>
+                            </li>
+                            <li><strong>Doctors</strong> - 800,000-1,200,000 NOK/year
+                                <span class="job-detail">General practitioners and specialists</span>
+                            </li>
+                            <li><strong>Physiotherapists</strong> - 520,000-680,000 NOK/year
+                                <span class="job-detail">Rehabilitation and physical therapy</span>
+                            </li>
+                            <li><strong>Healthcare Assistants</strong> - 420,000-520,000 NOK/year
+                                <span class="job-detail">Support medical staff, patient care</span>
+                            </li>
+                            <li><strong>Medical Specialists</strong> - 900,000-1,400,000 NOK/year
+                                <span class="job-detail">Cardiology, surgery, psychiatry, etc.</span>
+                            </li>
+                        </ul>
+                        <div class="sector-requirements">
+                            <strong>Requirements:</strong> Medical degree/certification, license recognition, Norwegian language (B2 level minimum)
+                        </div>
+                    </div>
+                    <div class="sector-card">
+                        <h3>🎓 Education</h3>
+                        <p class="sector-description">Teachers are in high demand across all education levels in Norway.</p>
+                        <ul>
+                            <li><strong>Teachers (all levels)</strong> - 480,000-650,000 NOK/year
+                                <span class="job-detail">Primary, secondary, high school teaching</span>
+                            </li>
+                            <li><strong>Kindergarten Staff</strong> - 420,000-520,000 NOK/year
+                                <span class="job-detail">Early childhood education and care</span>
+                            </li>
+                            <li><strong>Special Education Teachers</strong> - 520,000-680,000 NOK/year
+                                <span class="job-detail">Support students with special needs</span>
+                            </li>
+                            <li><strong>University Lecturers</strong> - 600,000-850,000 NOK/year
+                                <span class="job-detail">Higher education teaching and research</span>
+                            </li>
+                            <li><strong>School Counselors</strong> - 550,000-720,000 NOK/year
+                                <span class="job-detail">Student guidance and support</span>
+                            </li>
+                        </ul>
+                        <div class="sector-requirements">
+                            <strong>Requirements:</strong> Teaching degree, pedagogical training, Norwegian language skills (often required)
+                        </div>
+                    </div>
+                    <div class="sector-card">
+                        <h3>🍽️ Hospitality & Tourism</h3>
+                        <p class="sector-description">Norway's tourism industry offers diverse opportunities, especially in peak seasons.</p>
+                        <ul>
+                            <li><strong>Chefs & Cooks</strong> - 450,000-600,000 NOK/year
+                                <span class="job-detail">Fine dining and casual restaurants</span>
+                            </li>
+                            <li><strong>Hotel Managers</strong> - 550,000-750,000 NOK/year
+                                <span class="job-detail">Hotel operations and guest services</span>
+                            </li>
+                            <li><strong>Tour Guides</strong> - 420,000-550,000 NOK/year
+                                <span class="job-detail">Nature tours, Northern Lights, fjord tours</span>
+                            </li>
+                            <li><strong>Restaurant Managers</strong> - 500,000-680,000 NOK/year
+                                <span class="job-detail">Restaurant operations and staff management</span>
+                            </li>
+                            <li><strong>Sommelier</strong> - 480,000-650,000 NOK/year
+                                <span class="job-detail">Wine expertise for fine dining</span>
+                            </li>
+                        </ul>
+                        <div class="sector-requirements">
+                            <strong>Requirements:</strong> Relevant experience, customer service skills, English essential, Norwegian advantageous
+                        </div>
+                    </div>
+                    <div class="sector-card">
+                        <h3>⚙️ Oil & Gas</h3>
+                        <p class="sector-description">Norway's offshore industry offers some of the highest-paying jobs in the country.</p>
+                        <ul>
+                            <li><strong>Petroleum Engineers</strong> - 750,000-1,100,000 NOK/year
+                                <span class="job-detail">Drilling operations and reservoir engineering</span>
+                            </li>
+                            <li><strong>Offshore Workers</strong> - 600,000-850,000 NOK/year
+                                <span class="job-detail">Platform operations, 2 weeks on/4 weeks off</span>
+                            </li>
+                            <li><strong>Process Engineers</strong> - 680,000-920,000 NOK/year
+                                <span class="job-detail">Refining and processing operations</span>
+                            </li>
+                            <li><strong>Safety Specialists</strong> - 650,000-880,000 NOK/year
+                                <span class="job-detail">HSE management on offshore platforms</span>
+                            </li>
+                            <li><strong>Drilling Engineers</strong> - 720,000-980,000 NOK/year
+                                <span class="job-detail">Wellbore planning and execution</span>
+                            </li>
+                        </ul>
+                        <div class="sector-requirements">
+                            <strong>Requirements:</strong> Engineering degree, offshore safety training, relevant certifications, English fluency
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Apply Section -->
+        <section id="how-to-apply" class="section alternate-bg">
+            <div class="container">
+                <h2>How to Apply</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Check Requirements</h3>
+                        <p>Verify if you need a work permit. EU/EEA citizens can work freely in Norway. Others need a job offer before applying for a work permit.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Find a Job</h3>
+                        <p>Search for jobs on Norwegian job portals like NAV.no, Finn.no, or through recruitment agencies. You can also contact us for assistance.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Apply for Work Permit</h3>
+                        <p>Once you have a job offer, apply for a residence permit through UDI (Norwegian Directorate of Immigration).</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Prepare for Relocation</h3>
+                        <p>Arrange housing, register with the authorities, and prepare for your new life in Norway. We can help you with this process.</p>
+                    </div>
+                </div>
+
+                <div class="resources">
+                    <h3>Useful Resources</h3>
+                    <div class="resources-grid">
+                        <div class="resource-item">
+                            <h4>🏛️ UDI (Immigration)</h4>
+                            <p><strong>Website:</strong> <a href="https://www.udi.no" target="_blank">udi.no</a></p>
+                            <p>Official immigration portal for work permits, residence permits, and visa applications. Comprehensive guides in multiple languages.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>💼 NAV (Labor & Welfare)</h4>
+                            <p><strong>Website:</strong> <a href="https://www.nav.no" target="_blank">nav.no</a></p>
+                            <p>Norwegian job search portal, unemployment benefits, and social services. Browse thousands of job listings.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>💰 Norwegian Tax Administration</h4>
+                            <p><strong>Website:</strong> <a href="https://www.skatteetaten.no" target="_blank">skatteetaten.no</a></p>
+                            <p>Tax information, tax cards, and tax returns. Essential for all workers in Norway.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>📚 Learn Norwegian</h4>
+                            <p><strong>Website:</strong> <a href="https://www.norskkurs.no" target="_blank">norskkurs.no</a></p>
+                            <p>Free Norwegian language courses for immigrants. Learn at your own pace with government support.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>🔍 Job Search Portals</h4>
+                            <p><strong>Websites:</strong> <a href="https://www.finn.no/job" target="_blank">finn.no</a>, <a href="https://www.nav.no/jobb" target="_blank">nav.no/jobb</a></p>
+                            <p>Main job portals in Norway. Updated daily with new positions across all sectors.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>🏠 Housing</h4>
+                            <p><strong>Website:</strong> <a href="https://www.finn.no/realestate" target="_blank">finn.no/realestate</a></p>
+                            <p>Find apartments and houses for rent or purchase. Largest real estate portal in Norway.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>🏥 Healthcare Information</h4>
+                            <p><strong>Website:</strong> <a href="https://www.helsenorge.no" target="_blank">helsenorge.no</a></p>
+                            <p>Health services, finding doctors, and booking appointments. Your health portal in Norway.</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4>📄 Documentation & Recognition</h4>
+                            <p><strong>Website:</strong> <a href="https://www.nokut.no" target="_blank">nokut.no</a></p>
+                            <p>Recognition of foreign education and professional qualifications. Essential for regulated professions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p class="section-intro">Interested in working in Norway? Get in touch with us and we'll help you get started!</p>
+                
+                <div class="contact-content">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="country">Country *</label>
+                            <input type="text" id="country" name="country" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="profession">Profession/Field *</label>
+                            <input type="text" id="profession" name="profession" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experience">Years of Experience</label>
+                            <input type="number" id="experience" name="experience" min="0">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about yourself and what kind of work you're looking for in Norway..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Send Inquiry</button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <h3>Get Help</h3>
+                        <p>We're here to assist you with:</p>
+                        <ul>
+                            <li>Finding job opportunities</li>
+                            <li>Understanding work permit requirements</li>
+                            <li>Relocation planning</li>
+                            <li>Norwegian language resources</li>
+                            <li>Cultural adaptation tips</li>
+                        </ul>
+                        
+                        <div class="social-links">
+                            <h4>Follow Us</h4>
+                            <p>Stay updated with the latest opportunities and tips for working in Norway.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Duuniin Norjaan</h3>
+                    <p>Helping talented professionals find their dream careers in Norway.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Norway</a></li>
+                        <li><a href="#why-norway">Why Norway</a></li>
+                        <li><a href="#opportunities">Opportunities</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://www.udi.no" target="_blank">UDI - Immigration</a></li>
+                        <li><a href="https://www.nav.no" target="_blank">NAV - Jobs</a></li>
+                        <li><a href="https://www.visitnorway.com" target="_blank">Visit Norway</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Duuniin Norjaan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
